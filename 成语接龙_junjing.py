@@ -2,9 +2,9 @@
 """
 Created on Wed Sep 19 10:25:25 2018
 Updated by jesseZhang on Mon Nov 12 13:39:00 2018
+Updated by jesseZhang on Mon Dec 1 15:14:00 2018
 @author: pwy5150 & jesseZhang
 """
-from langconv import * #简繁体转换
 import os
 import pandas as pd
 import random
@@ -143,18 +143,6 @@ class chinesePuzzleGame:
                     continue
         print("游戏结束.")
 
-
-# TODO 可以将取词专门做一个方法封装起来, 然后就可以把loop和loop_take精简一下了
-
 if __name__ == '__main__':
     startGame = chinesePuzzleGame()
     startGame.run()
-
-
-
-            
-#---------------------------------这段循环----------------------------------
-#问题:忘记忽略标点符号,解决办法:直接处理excel 文件里面的标点符号(已经解决)
-#loop这里最好不显示，这是为了让loop里面的while判断出来的临时语库的长度不为0
-#还缺了一个认输机制
-#认输这里，要重新写才行
